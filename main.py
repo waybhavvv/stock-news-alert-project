@@ -6,10 +6,10 @@ COMPANY_NAME = "Tesla Inc"
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 
-STOCK_API_KEY = "AIXMB3396YA92PY"
-NEWS_API_KEY="54c4dd581f9743c59346c014fd69dc49"
-TWILIO_SID="ACf29f667651252a2f27c5a1d88f04e7c3"
-TWILIO_AUTH_TOKEN="c271f8cb080bcf2471f0b4beb999e0e0"
+STOCK_API_KEY = "YOUR_API_KEY"
+NEWS_API_KEY="YOUR_API_KEY"
+TWILIO_SID="YOUR SID"
+TWILIO_AUTH_TOKEN="YOUR TOKEN"
 
     ## STEP 1: Use https://www.alphavantage.co/documentation/#daily
 # When stock price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
@@ -73,8 +73,8 @@ if diff_percent>1:
     for article in formatted_articles:
         message=client.messages.create(
             body=article,
-            from_="+15706188944",
-            to="+919315113828"
+            from_="YOUR TWILIO PHONE NUMBER",
+            to="YOUR PHONE NUMBER"
         )
 
 #Optional TODO: Format the message like this: 
